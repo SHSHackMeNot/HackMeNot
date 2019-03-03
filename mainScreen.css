@@ -1,0 +1,55 @@
+body{
+	background-image:url("Assets/realmatrix.gif");
+  color:white;
+}
+#menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menuElements {
+  font-family: 'Marcellus SC', serif;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menuElementsListContainer{
+  float:left;
+}
+
+#simulation {
+  width:100%
+}
+
+#passwordGen {
+  background-color:black;
+}
+
+#aboutUs{
+  background-color:black;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+form{
+  line-height: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 150;
+  color: white;
+}

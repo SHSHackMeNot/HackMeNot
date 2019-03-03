@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <!-- THIS IS THE MAIN PAGE: LOADS AFTER LOCK IS CLICKED-->
+  <head>
+    <!--
+      fonts for the website 
+      font usage details:
+        font-family: 'Indie Flower', cursive;
+        font-family: 'Marcellus SC', serif;
+        font-family: 'Balthazar', serif;
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Balthazar|Indie+Flower|Marcellus+SC" rel="stylesheet">
+    <script src="mainScreen.js"></script>
+    <script src="randomGenerator.js"></script>
+    
+    <!--css src files for the website-->
+    <link rel="stylesheet" type="text/css" href="mainScreen.css">
+    <!-- Website Title> -->
+    <title>Hack Me Not</title>
+  </head>
+  <body>
+    <!-- Menu div -->
+    <ul id="menu">
+      <!--Links down the page-->
+        
+      <li class="menuElementsListContainer"><a href="#simulation" class="menuElements">Simulation</a></li>
+      
+      <li class="menuElementsListContainer"><a href="#passwordGen" class="menuElements">Password Generator</a></li>
+      <li class="menuElementsListContainer"><a href="#aboutUs" class="menuElements">About Us</a></li>
+        
+    </ul>  
+    </div>
+    <div id="simulation">
+      <!-- Embed Presentation -->
+      <iframe style="width:80%;display: block;margin-left:auto;margin-top:50px;margin-right:auto;height:500px;"src="https://docs.google.com/presentation/d/e/2PACX-1vR2QQcof-aYimCC9rIESz0A2N-4opRhZuN_4lz9xIyB9SS7Y08YxSa8WeB8WugF1EoHodUWARoWslaL/embed?start=true&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+    <div id="passwordGen" style="padding-top:100px;border:2px solid white;">
+      <div id="passwordGenHeader">
+        <h1 style="color:white;text-align:center;">
+          Password Generator
+        </h1>
+      </div>
+      <div>
+        <form id="passLengthInput" style="font-size:20px;text-align:center;">
+          Lowercase Letters?
+          <input type="checkbox" id="letCheck">
+          <br>
+          Uppercase Letters?
+          <input type="checkbox" id="capLetCheck">
+          <br>
+          Numbers?
+          <input type="checkbox" id="numCheck">
+          <br>
+          Special Characters?
+          <input type="checkbox" id="specCheck">
+          <br>
+          Password Length(number)?
+          <input type="text" id="passLength">  
+          <br>
+          Generate:
+          <input type="submit" onclick="randomGenerator()">
+        </form>
+      </div>
+      <div id="passwordGenResults">
+        <p id="passwordGenResultsParagraph">
+          
+        </p>
+      </div>
+    </div>
+    <div id="aboutUs" style="border:2px solid white;padding-top:50px;">
+      <div id="groupPhoto">
+        <img src="">
+      </div>
+      <div id="aboutUsContent">
+        <div id="aboutUsMenu">
+          <h1 style="text-align:center;">
+            About Us 
+          </h1>
+        </div>
+        <img src="Assets/ourPhoto.png" style="max-width:30%;margin-left:auto;margin-right:auto;display: block;">
+        <div id="ourInfo">
+          <p>
+            We are a group of high school students who are interested in educating
+            the public about the growing dangers of cyber-hacking. 
+          </p>
+        </div>
+        <div id="ourPurpose">
+          <p>
+            Our website hosts a multitude of resources such as a simulation 
+            to educate you on how to stay safe and a secure password generator. 
+          </p>
+        </div>
+        <div id="ourReason">
+          <p>
+            We are focused on educating all people, but especially older people and 
+            younger children who can easily be tricked into giving up their data or 
+            can easily be hacked.  Our simulation hosted by our very own Hacky, the 
+            thumb drive, aims to teach users how they are susceptible to attacks and 
+            how to prevent them. The password generator is useful to those who are 
+            looking to keep their password secure and meeting all requirements. 
+          </p>
+        </div>
+        <div id="ourCredits">
+          <p>
+            This website was made by Abhilash Raghuram, Abishek Kannan, Aniket Kulkarni, 
+            Sathvik Reddy, and Varun Jagannath. We would like to thank Dave Gandy and KissPNG 
+            for giving us access to images to use on our website.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </body> 
+    
+</html>
